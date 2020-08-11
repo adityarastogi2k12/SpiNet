@@ -10,6 +10,25 @@ Hemant et al. <a href="#modl">[1]</a>. have released the parallel imaging datase
 Download Link : https://drive.google.com/file/d/1qp-l9kJbRfQU1W5wCjOQZi7I3T6jwA37/view?usp=sharing
 
 
+## Files
+> The repository consists of the following files :-
+1. **R16.mat** :- This file consists of the radial golden angle undersampling mask for 16 X undersampling rate.
+2. **MODL** :- This folder consists of the saved model, training, testing, model generation and support funtion files for MODL. The files present in the folder are as follows :-
+>>
+i. trn_old_R16.py :- This is the main training file for MODL
+ii. tst_old_R16.py :- This is the main testing file for MODL
+iii. model_old.py :- Model generating file for MODL
+iv. supportFunctions_old_R16.py :- Support function file for MODL used for reading and preprocessing training and testing data, generating PSNR values, loading saved model etc.
+
+3. **SpiNet** :- This folder consists of the saved model, training, testing, model generation and support funtion files for SpiNet. The files present in the folder are as follows :-
+>>
+i. trn_R16_8.py :- This is the main training file for SpiNet
+ii. tst_R16_8.py :- This is the main testing file for SpiNet
+iii. model_p_R6_8.py :- Model generating file for SpiNet
+iv. supportFunctions_R16.py :- Support function file for SpiNet used for reading and preprocessing training and testing data, generating PSNR values, loading saved model etc.
+
+
+
 
 
 ## References
