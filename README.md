@@ -7,7 +7,7 @@ The training data for SpiNet consists of brain scans of four patients and 360 im
 
 Hemant et al. <a href="#modl">[1]</a>. have released the parallel imaging dataset used in their MoDL paper <a href="#modl">[1]</a>. You can download the full dataset from the below link:
 
-Download Link : https://drive.google.com/file/d/1qp-l9kJbRfQU1W5wCjOQZi7I3T6jwA37/view?usp=sharing
+Download Link for file ``dataset.hdf5" : https://drive.google.com/file/d/1qp-l9kJbRfQU1W5wCjOQZi7I3T6jwA37/view?usp=sharing
 
 
 ## Files
@@ -26,7 +26,7 @@ Download Link : https://drive.google.com/file/d/1qp-l9kJbRfQU1W5wCjOQZi7I3T6jwA3
       - model_p_R6_8.py :- Model generating file for SpiNet
       - supportFunctions_R16.py :- Support function file for SpiNet used for reading and preprocessing training and testing data, generating PSNR values, loading         saved model etc.
 
-**Note that training data, R16.mat should be in MODL/SpiNet folder to while executing the training or testing code.**
+**Note that dataset.hdf5 and R16.mat should be in MODL/SpiNet folder to while executing the training or testing code.**
 
 
 
