@@ -2,14 +2,13 @@
 """
 This is the training code to train the model as described in the following article:
 
-MoDL: Model-Based Deep Learning Architecture for Inverse Problems
-by H.K. Aggarwal, M.P. Mani, M. Jacob from University of Iowa.
+SpiNet: A Deep Neural Network for Schatten p-norm Regularized Medical Image Reconstruction
+by Aditya Rastogi, Phaneendra Yalavarthy from Indian Institute of Sciences.
 
-Paper dwonload  Link:     https://arxiv.org/abs/1712.02862
 
 This code solves the following optimization problem:
 
-    argmin_x ||Ax-b||_2^2 + ||x-Dw(x)||^2_2
+    argmin_x ||Ax-b||_2^2 + ||x-Dw(x)||^p_p
 
  'A' can be any measurement operator. Here we consider parallel imaging problem in MRI where
  the A operator consists of undersampling mask, FFT, and coil sensitivity maps.
@@ -44,7 +43,7 @@ You can give the name of the generated ouput directory in the tstDemo.py to
 run the newly trained model on the test data.
 
 
-@author: Hemant Kumar Aggarwal
+@author: Aditya Rastogi
 """
 
 # import some librariesw
