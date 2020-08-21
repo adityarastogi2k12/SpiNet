@@ -12,7 +12,6 @@ This is the demo code. That should run without making any changes.
 
 This code will load the learned model from the subdirectory 'savedModels'
 
-This test code will load an  image for  from the demoImage.hdf5 file.
 
 @author: Aditya Rastogi
 ."""
