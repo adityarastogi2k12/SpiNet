@@ -3,19 +3,18 @@
 """
 Created on Tue Mar 10 19:17:18 2020
 
-@author: naveen_p
+@author: Aditya Rastogi
 """
 
 """
 Created on Fri Mar 30 12:39:26 2018
 This is the demo code. That should run without making any changes.
-Please ensure that demoImage.hdf5 is in the same directory as this file tstDemo.py.
 
 This code will load the learned model from the subdirectory 'savedModels'
 
 This test code will load an  image for  from the demoImage.hdf5 file.
 
-@author: haggarwal
+@author: Aditya Rastogi
 ."""
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
