@@ -1,12 +1,11 @@
 """
 This code will create the model described in our following paper
-MoDL: Model-Based Deep Learning Architecture for Inverse Problems
-by H.K. Aggarwal, M.P. Mani, M. Jacob from University of Iowa.
+SpiNet: A Deep Neural Network for Schatten p-norm Regularized Medical Image Reconstruction
+by Aditya Rastogi, Phaneendra Yalavarthy, Indian Institute of Sciences, Bangalore
 
-Paper dwonload  Link:     https://arxiv.org/abs/1712.02862
 
 This function uses Lp norm with x^{k-1} as x0 for MM of next block
-@author: haggarwal
+@author: Aditya Rastogi
 """
 import tensorflow as tf
 import numpy as np
