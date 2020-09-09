@@ -3,12 +3,20 @@ This repository contains the official implementation for SpiNet: A Deep Neural N
 
 This code solves the following optimization problem:
 
-     argmin_x ||Ax-b||_2^2 + ||x-Dw(x)||^p_p 
+    J(x) = argmin_x ||Ax-b||_2^2 + ||x-Dw(x)||^p_p 
 
  `A` can be any measurement operator. Here we consider parallel imaging problem in MRI where
  the `A` operator consists of undersampling mask, FFT, and coil sensitivity maps.
 
 `Dw(x)`: it represents the denoiser using a residual learning CNN.
+
+Using Majorization-Minimization algorithm the optimization problem as be modified as:
+
+     G(x|x*) = argmin_x ||Ax-b||_2^2 + p/2||W(x-Dw(x))||^p_p 
+     
+     W = diag((x*-Dw(x))^{p/2-1})
+`x*`: is the point at which `J(x*) = G(x*|x*)`
+
 
 ## Architecture
 
