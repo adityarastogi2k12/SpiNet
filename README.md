@@ -1,6 +1,14 @@
 # SpiNet
 This repository contains the official implementation for SpiNet: A Deep Neural Network for Schatten p-norm Regularized Medical Image Reconstruction
 
+## Architecture
+
+Denoising results with noise level 50.
+
+<p align="center">
+  <img src="images/Fig2.jpg" width="285px" alt=""> 
+</p>
+
 ## Training Data
 
 The training data for SpiNet consists of brain scans of four patients and 360 images in total. The testing data consists of 164 images from one patients.
