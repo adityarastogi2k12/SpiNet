@@ -6,7 +6,7 @@ This repository contains the official implementation for SpiNet: A Deep Neural N
 Denoising results with noise level 50.
 
 <p align="center">
-  <img src="images/Fig2.jpg" width="285px" alt=""> 
+  <img src="images/Fig2.jpg" width="1000px" alt=""> 
 </p>
 
 ## Training Data
