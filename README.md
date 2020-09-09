@@ -1,10 +1,18 @@
 # SpiNet
 This repository contains the official implementation for SpiNet: A Deep Neural Network for Schatten p-norm Regularized Medical Image Reconstruction
 
+This code solves the following optimization problem:
+
+     argmin_x ||Ax-b||_2^2 + ||x-Dw(x)||^p_p 
+
+ `A` can be any measurement operator. Here we consider parallel imaging problem in MRI where
+ the `A` operator consists of undersampling mask, FFT, and coil sensitivity maps.
+
+`Dw(x)`: it represents the denoiser using a residual learning CNN.
+
 ## Architecture
 
-Denoising results with noise level 50.
-
+The architecture of our network is shown below
 <p align="center">
   <img src="images/Fig2.jpg" width="1000px" alt=""> 
 </p>
