@@ -94,7 +94,7 @@ def myCG(A,rhs):
     complex data and runs on GPU. It takes the class object as input.
     """
     rhs=r2c(rhs)
-    cond=lambda i,rTr,*_: tf.logical_and( tf.less(i,10), rTr>1e-10)
+    cond=lambda i,rTr,*_: tf.logical_and( tf.less(i,16), rTr>1e-10)
     def body(i,rTr,x,r,p):
         with tf.name_scope('cgBody'):
             Ap=A.myAtA(p)
