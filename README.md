@@ -1,6 +1,12 @@
 # SpiNet
 This repository contains the official implementation for SpiNet: A Deep Neural Network for Schatten p-norm Regularized Medical Image Reconstruction
 
+This paper is published in **Medical Physics** journal. Please cite the paper if you intent on using the code.
+
+Rastogi A, Yalavarthy PK. SpiNet: A deep neural network for Schatten p-norm regularized medical image reconstruction. Med Phys. 2021 May;48(5):2214-2229. doi: 10.1002/mp.14744. Epub 2021 Mar 22. PMID: 33525049.
+
+Link for paper: https://pubmed.ncbi.nlm.nih.gov/33525049/
+
 This code solves the following optimization problem:
 
     J(x) = argmin_x ||Ax-b||_2^2 + ||x-Dw(x)||^p_p 
@@ -52,6 +58,9 @@ Download Link for file "dataset.hdf5" : https://drive.google.com/file/d/1qp-l9kJ
 
 **Note that dataset.hdf5 and R16.mat should be in MODL/SpiNet folder to while executing the training or testing code.**
 
+
+Contact
+The code is provided to support reproducible research. If the code is giving syntax error in your particular python configuration or some files are missing then you may open an issue or directly email me at adityar[at]iisc[dot]ac[dot]in
 
 
 ## References
